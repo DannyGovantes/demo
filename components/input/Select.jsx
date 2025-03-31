@@ -24,11 +24,15 @@ export function SelectInput({ label, placeholder, isHorizontal = false }) {
         </SelectTrigger>
         <SelectContent>
           <SelectGroup>
-            <SelectItem value="apple">Apple</SelectItem>
-            <SelectItem value="banana">Banana</SelectItem>
-            <SelectItem value="blueberry">Blueberry</SelectItem>
-            <SelectItem value="grapes">Grapes</SelectItem>
-            <SelectItem value="pineapple">Pineapple</SelectItem>
+            <SelectItem value="gestionDocumental">
+              Gestión Documental
+            </SelectItem>
+            <SelectItem value="contratos">Contratos</SelectItem>
+            <SelectItem value="administracionProyectos">
+              Administración de Proyectos
+            </SelectItem>
+            <SelectItem value="catalogos">Catálogos</SelectItem>
+            <SelectItem value="convenios">Convenios</SelectItem>
           </SelectGroup>
         </SelectContent>
       </Select>

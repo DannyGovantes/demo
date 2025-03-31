@@ -130,11 +130,11 @@ export function Modal() {
         <Button>700200</Button> +
       </div>
       <Separator />
-      <div className="d-flex flex justify-between gap-4">
+      {/* <div className="d-flex flex justify-between gap-4">
         <SelectInput isHorizontal label={"Clave Contable:*"} />
         <SelectInput isHorizontal label={"Agrupador:*"} />
         <SelectInput isHorizontal label={"Tipo Agrupador:*"} />
-      </div>
+      </div> */}
       <InputField isHorizontal label={"Nombre del Monto:*"} />
       <div className="d-flex flex justify-between gap-4">
         <CheckboxInput

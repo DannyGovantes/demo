@@ -113,7 +113,7 @@ export default function CatalogoTramite() {
         cell: ({ getValue }) => (
           <>
             <span className={`bg-green-300 text-slate-800 p-1 rounded`}>
-              Enviar
+              Validar
             </span>
           </>
         ),

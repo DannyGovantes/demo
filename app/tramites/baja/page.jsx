@@ -2,6 +2,7 @@
 import { DatePicker } from "@/components/input";
 import { EditableTable, HeaderSearchFilter } from "@/components/table";
 import { Button } from "@/components/ui/button";
+import { File, FileX } from "lucide-react";
 import React, { useMemo } from "react";
 const tableData = [
   {
@@ -97,8 +98,10 @@ export default function TramitesBajaPage() {
         </div>
       </section>
       <section>
-        <div className="text-end">
+        <div className="flex justify-end items-center gap-3">
           <Button>Mostrar Estadísticos</Button>
+          <File />
+          <FileX />
         </div>
       </section>
     </>

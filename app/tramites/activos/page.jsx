@@ -3,6 +3,7 @@ import { DatePicker, SelectInput } from "@/components/input";
 import { RadialGroup } from "@/components/input/RadialGroup";
 import { EditableTable, HeaderSearchFilter } from "@/components/table";
 import { Button } from "@/components/ui/button";
+import { File, FileX } from "lucide-react";
 import React, { useMemo } from "react";
 
 const tableData = [
@@ -113,8 +114,10 @@ export default function TramitesActivosPage() {
         </div>
       </section>
       <section>
-        <div className="text-end">
+        <div className="flex justify-end items-center gap-3">
           <Button>Mostrar Estadísticos</Button>
+          <File />
+          <FileX />
         </div>
       </section>
     </>

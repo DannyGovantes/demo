@@ -131,17 +131,7 @@ export default function BitacoraPage() {
           <EditableTable columns={columns} data={tableData} hasPagination />
         </div>
       </section>
-      <section>
-        <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
-          <BarChart accessibilityLayer data={chartData}>
-            <Bar dataKey="desktop" fill="var(--color-desktop)" radius={4} />
-            <Bar dataKey="mobile" fill="var(--color-mobile)" radius={4} />
-          </BarChart>
-        </ChartContainer>
-        <div className="text-end">
-          <Button>Mostrar Estadísticos</Button>
-        </div>
-      </section>
+
       <Dialog open={true}>
         <DialogContent className="sm:max-w-md">
           <DialogHeader>

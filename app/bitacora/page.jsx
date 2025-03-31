@@ -94,7 +94,7 @@ export default function BitacoraPage() {
       <section className="py-4">
         <h1 className="font-bold">Bitácora de Acceso al Sistema</h1>
         <h2>Periodo Fecha de Acceso al Sistema</h2>
-        <div className="d-flex flex justify-between gap-3 py-4">
+        <div className="d-flex flex justify-between items-end gap-3 py-4">
           <div className="d-flex flex gap-3">
             <DatePicker label="Fecha de Inicio:*" />
             <DatePicker label="Fecha de Fin:*" />

@@ -121,7 +121,7 @@ export default function EstadisticosPage() {
       <h1 className="font-bold">Estadísticos</h1>
       <h2>Estado líneas de captura</h2>
 
-      <div className="d-flex flex justify-between gap-3 py-4">
+      <div className="d-flex flex justify-between items-end gap-3 py-4">
         <SelectInput placeholder={"BBVA"} label={"Institución Financiera:"} />
 
         <div className=" d-flex flex gap-3">

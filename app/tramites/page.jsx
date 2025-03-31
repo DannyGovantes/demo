@@ -104,7 +104,7 @@ export default function EstadisticoTramitesPage() {
         <h1 className="font-bold">Estadísticos</h1>
         <h2>Control de Trámites</h2>
 
-        <div className="d-flex flex gap-3 py-4">
+        <div className="d-flex flex items-end gap-3 py-4">
           <SelectInput placeholder={"XXXXXXXXXXXX"} label={"Trámite:"} />
           <div className="d-flex flex gap-3">
             <DatePicker label="Fecha de Inicio:" />

@@ -74,7 +74,7 @@ export default function TramitesActivosPage() {
       },
       {
         accessorKey: "tramitesActivos",
-        header: "Tramites activos",
+        header: "Trámites activos",
         cell: ({ getValue }) => <>{getValue()}</>,
       },
     ],
@@ -83,7 +83,7 @@ export default function TramitesActivosPage() {
   return (
     <>
       <section className="py-4">
-        <h1 className="font-bold">Estadístico Detalle tramites activos</h1>
+        <h1 className="font-bold">Estadístico Detalle Trámites Activos</h1>
         <div className="d-flex flex justify-between py-4 items-end">
           <div className="d-flex flex gap-3">
             <DatePicker label="Fecha de Inicio:*" />
@@ -113,7 +113,7 @@ export default function TramitesActivosPage() {
           <EditableTable columns={columns} data={tableData} hasPagination />
         </div>
       </section>
-      <section>
+      <section className="py-4">
         <div className="flex justify-end items-center gap-3">
           <Button>Mostrar Estadísticos</Button>
           <File />

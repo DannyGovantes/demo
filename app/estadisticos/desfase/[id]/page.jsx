@@ -78,12 +78,12 @@ export default function EstadisticosDesfasePage() {
       <section className="py-4">
         <h1 className="font-bold">Estadístico Desfase Fecha de Pago</h1>
         <h2>Periodo de Fechas de Registro</h2>
-        <div className="d-flex flex justify-between py-4">
+        <div className="d-flex flex justify-between py-4 items-end">
           <div className="d-flex flex gap-3">
-            <DatePicker />
-            <DatePicker />
+            <DatePicker label="Fecha de Inicio:*" />
+            <DatePicker label="Fecha de Fin:*" />
           </div>
-          <Button>Generar estadisticos</Button>
+          <Button>Generar Estadísticos</Button>
         </div>
         <div className="py-4">
           <EditableTable columns={columns} data={tableData} hasPagination />
@@ -91,7 +91,7 @@ export default function EstadisticosDesfasePage() {
       </section>
       <section>
         <div className="text-end">
-          <Button>Mostrar estadisticos</Button>
+          <Button>Mostrar Estadísticos</Button>
         </div>
       </section>
       <Dialog open={true}>

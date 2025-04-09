@@ -83,7 +83,7 @@ export default function EstadisticosDesfasePage() {
           <EditableTable columns={columns} data={tableData} hasPagination />
         </div>
       </section>
-      <section>
+      <section className="py-4">
         <div className="flex justify-end items-center gap-3">
           <Button>Mostrar Estadísticos</Button>
           <File />

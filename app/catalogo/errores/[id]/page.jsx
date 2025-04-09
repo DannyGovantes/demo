@@ -83,7 +83,7 @@ export default function CatalogoErrores() {
       },
       {
         accessorKey: "descripcionError",
-        header: "Descripcion del Error",
+        header: "Descripción del Error",
         cell: ({ getValue }) => <>{getValue()}</>,
       },
       {
@@ -97,7 +97,7 @@ export default function CatalogoErrores() {
   return (
     <>
       <section>
-        <h1>Catalogo de Errores</h1>
+        <h1>Catálogo de Errores</h1>
         <Button>+ Nuevo</Button>
         <div>
           <EditableTable columns={columns} data={tableData} hasPagination />

@@ -54,7 +54,7 @@ export default function CatalogoTramite() {
     () => [
       {
         accessorKey: "tramiteDependencia",
-        header: "Tramite Dependencia",
+        header: "Trámite Dependencia",
         cell: ({ getValue }) => <>{getValue()}</>,
       },
       {
@@ -64,12 +64,12 @@ export default function CatalogoTramite() {
       },
       {
         accessorKey: "nombreTramite",
-        header: "Nombre Tramite",
+        header: "Nombre Trámite",
         cell: ({ getValue }) => <>{getValue()}</>,
       },
       {
         accessorKey: "tramitePrivado",
-        header: "Tramite Privado",
+        header: "Trámite Privado",
         cell: ({ getValue }) => <>{getValue()}</>,
       },
       {
@@ -108,7 +108,7 @@ export default function CatalogoTramite() {
   return (
     <>
       <section>
-        <h1 className="font-bold">Catalogo de tramites</h1>
+        <h1 className="font-bold">Catálogo de trámites</h1>
         <Button className="my-4">+ Nuevo</Button>
 
         <div className="d-flex flex gap-3 py-4">
@@ -116,7 +116,7 @@ export default function CatalogoTramite() {
             label={"Dependencias"}
             placeholder={"Agencia Reguladora del Transporte Ferroviario"}
           />
-          <SelectInput label={"Tramites"} placeholder={"Seleccionar tramite"} />
+          <SelectInput label={"Trámites"} placeholder={"Seleccionar trámite"} />
         </div>
 
         <div>
@@ -124,7 +124,7 @@ export default function CatalogoTramite() {
         </div>
       </section>
       <Dialog open={true}>
-        <DialogContent className="max-w-screen-lg">
+        <DialogContent className="max-w-screen-lg h-full overflow-y-scroll">
           <DialogHeader>
             <DialogTitle>Lineas de Captura Pagadas por Dependencia</DialogTitle>
           </DialogHeader>

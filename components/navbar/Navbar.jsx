@@ -141,7 +141,7 @@ export function Navbar() {
 
               <div className="col-md-6 mainTitInter text-xs-center text-sm-center">
                 <h1 className="text-3xl font-bold">
-                  Derechos, Productos y Aprovechamiento Federales con Linea de
+                  Derechos, Productos y Aprovechamiento Federales con Línea de
                   Captura
                 </h1>
               </div>

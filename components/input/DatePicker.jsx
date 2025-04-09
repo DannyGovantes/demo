@@ -28,7 +28,7 @@ export function DatePicker({ label = "test" }) {
               !date && "text-muted-foreground"
             )}
           >
-            {date ? format(date, "PPP") : <span>Pick a date</span>}
+            {date ? format(date, "PPP") : <span>Seleccione una fecha</span>}
             <CalendarIcon />
           </Button>
         </div>

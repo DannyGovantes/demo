@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/dialog";
 
 import { ChartContainer } from "@/components/ui/chart";
+import { File, FileX } from "lucide-react";
 const tableData = [
   {
     id: 1,
@@ -56,12 +57,12 @@ export default function EstadisticosPagadasPage() {
       },
       {
         accessorKey: "lineasCaptura",
-        header: "Lineas de captura",
+        header: "Líneas de captura",
         cell: ({ getValue }) => <>{getValue()}</>,
       },
       {
         accessorKey: "datosInforme",
-        header: "Datos de informe",
+        header: "Datos de Informe",
         cell: ({ getValue }) => <>{getValue()}</>,
       },
     ],
@@ -72,10 +73,10 @@ export default function EstadisticosPagadasPage() {
       <section className="py-4">
         <h1 className="font-bold">Estadístico LÍneas de Captura Pagadas</h1>
         <h2>Periodo Lineas de Captura Pagadas</h2>
-        <div className="d-flex flex gap-3 py-4">
+        <div className="d-flex flex gap-3 py-4 items-end">
           <div className="d-flex flex gap-3">
-            <DatePicker />
-            <DatePicker />
+            <DatePicker label="Fecha de Inicio:*" />
+            <DatePicker label="Fecha de Fin:*" />
           </div>
           <RadialGroup
             options={[
@@ -84,21 +85,23 @@ export default function EstadisticosPagadasPage() {
             ]}
           />
           <SelectInput label={"Datos de informe"} placeholder={"Seleccionar"} />
-          <Button>Generar estadísticos</Button>
+          <Button>Generar Estadísticos</Button>
         </div>
         <div className="py-4">
           <EditableTable columns={columns} data={tableData} hasPagination />
         </div>
       </section>
       <section>
-        <div className="text-end">
-          <Button>Mostrar estadisticos</Button>
+        <div className="flex justify-end items-center gap-3">
+          <Button>Mostrar Estadísticos</Button>
+          <File />
+          <FileX />
         </div>
       </section>
       <Dialog open={true}>
         <DialogContent className="sm:max-w-md">
           <DialogHeader>
-            <DialogTitle>Lineas de Captura Pagadas por Dependencia</DialogTitle>
+            <DialogTitle>Líneas de Captura Pagadas por Dependencia</DialogTitle>
           </DialogHeader>
           <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
             <BarChart accessibilityLayer data={chartData}>

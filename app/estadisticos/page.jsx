@@ -70,27 +70,27 @@ export default function EstadisticosPage() {
     () => [
       {
         accessorKey: "lineaCaptura",
-        header: "Linea de captura",
+        header: "Línea de captura",
         cell: ({ getValue }) => <>{getValue()}</>,
       },
       {
         accessorKey: "aplicacionEmisora",
-        header: "Aplicacion emisora",
+        header: "Aplicación Emisora",
         cell: ({ getValue }) => <>{getValue()}</>,
       },
       {
         accessorKey: "fechaSolicitud",
-        header: "Fecha solicitud ",
+        header: "Fecha Solicitud ",
         cell: ({ getValue }) => <>{getValue()}</>,
       },
       {
         accessorKey: "fechaEmision",
-        header: "Fecha emision ",
+        header: "Fecha Emisión ",
         cell: ({ getValue }) => <>{getValue()}</>,
       },
       {
         accessorKey: "fechaVigencia",
-        header: "Fecha emision ",
+        header: "Fecha Vigencia",
         cell: ({ getValue }) => <>{getValue()}</>,
       },
       {

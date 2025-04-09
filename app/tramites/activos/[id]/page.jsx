@@ -89,7 +89,7 @@ export default function TramitesActivosPage() {
       },
       {
         accessorKey: "tramitesActivos",
-        header: "Tramites activos",
+        header: "Trámites activos",
         cell: ({ getValue }) => <>{getValue()}</>,
       },
     ],
@@ -98,11 +98,11 @@ export default function TramitesActivosPage() {
   return (
     <>
       <section className="py-4">
-        <h1 className="font-bold">Estadistico Detalle tramites activos</h1>
+        <h1 className="font-bold">Estadístico Detalle Trámites Activos</h1>
         <div className="d-flex flex justify-between py-4">
           <div className="d-flex flex gap-3">
-            <DatePicker />
-            <DatePicker />
+            <DatePicker label="Fecha de Inicio:*" />
+            <DatePicker label="Fecha de Fin:*" />
           </div>
 
           <RadialGroup
@@ -120,7 +120,7 @@ export default function TramitesActivosPage() {
             ]}
           />
           <div className="d-flex flex">
-            <Button> Generar estadisticos</Button>
+            <Button> Generar Estadísticos</Button>
           </div>
         </div>
 
@@ -130,7 +130,7 @@ export default function TramitesActivosPage() {
       </section>
       <section>
         <div className="text-end">
-          <Button>Mostrar estadisticos</Button>
+          <Button>Mostrar Estadísticos</Button>
         </div>
       </section>
       <Dialog open={true}>

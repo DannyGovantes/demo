@@ -70,7 +70,7 @@ export default function EstadisticoTramitesPage() {
     () => [
       {
         accessorKey: "lineaCaptura",
-        header: "Linea de Captura",
+        header: "Línea de Captura",
         cell: ({ getValue }) => <>{getValue()}</>,
       },
       {
@@ -112,7 +112,7 @@ export default function EstadisticoTramitesPage() {
           </div>
         </div>
         <div className="d-flex flex gap-3 py-4">
-          <InputField label={"Linea de Captura:"} />
+          <InputField label={"Línea de Captura:"} />
           <InputField label={"RFC:"} />
           <SelectInput label={"Dependencia:"} placeholder={"Seleccionar"} />
         </div>

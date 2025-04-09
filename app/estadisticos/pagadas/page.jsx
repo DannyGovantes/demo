@@ -31,12 +31,12 @@ export default function EstadisticosPagadasPage() {
       },
       {
         accessorKey: "lineasCaptura",
-        header: "Lineas de captura",
+        header: "Líneas de captura",
         cell: ({ getValue }) => <>{getValue()}</>,
       },
       {
         accessorKey: "datosInforme",
-        header: "Datos de informe",
+        header: "Datos de Informe",
         cell: ({ getValue }) => <>{getValue()}</>,
       },
     ],
@@ -62,13 +62,13 @@ export default function EstadisticosPagadasPage() {
             label={"Datos de informe:"}
             placeholder={"Seleccionar"}
           />
-          <Button>Generar estadísticos</Button>
+          <Button>Generar Estadísticos</Button>
         </div>
         <div className="py-4">
           <EditableTable columns={columns} data={tableData} hasPagination />
         </div>
       </section>
-      <section>
+      <section className="py-4">
         <div className="flex justify-end items-center gap-3">
           <Button>Mostrar Estadísticos</Button>
           <File />

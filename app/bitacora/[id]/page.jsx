@@ -102,7 +102,7 @@ export default function BitacoraPage() {
       },
       {
         accessorKey: "ultimaFechaAcceso",
-        header: "Ultima Fecha de Acceso",
+        header: "Última Fecha de Acceso",
         cell: ({ getValue }) => <>{getValue()}</>,
       },
       {
@@ -118,10 +118,10 @@ export default function BitacoraPage() {
       <section className="py-4">
         <h1 className="font-bold">Bitácora de Acceso al Sistema</h1>
         <h2>Periodo Fecha de Acceso al Sistema</h2>
-        <div className="d-flex flex justify-between gap-3 py-4">
+        <div className="d-flex flex justify-between gap-3 py-4 items-end">
           <div className="d-flex flex gap-3">
-            <DatePicker />
-            <DatePicker />
+            <DatePicker label="Fecha de Inicio:*" />
+            <DatePicker label="Fecha de Fin:*" />
           </div>
 
           <Button> Generar Bitácora</Button>
@@ -135,7 +135,7 @@ export default function BitacoraPage() {
       <Dialog open={true}>
         <DialogContent className="sm:max-w-md">
           <DialogHeader>
-            <DialogTitle>Lineas de Captura Pagadas por Dependencia</DialogTitle>
+            <DialogTitle>Líneas de Captura Pagadas por Dependencia</DialogTitle>
           </DialogHeader>
           <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
             <BarChart accessibilityLayer data={chartData}>

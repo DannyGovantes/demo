@@ -45,8 +45,8 @@ export default function EstadisticosPagadasPage() {
   return (
     <>
       <section className="py-4">
-        <h1 className="font-bold">Estadístico LÍneas de Captura Pagadas</h1>
-        <h2>Periodo Lineas de Captura Pagadas</h2>
+        <h1 className="font-bold">Estadístico Líneas de Captura Pagadas</h1>
+        <h2>Periodo Líneas de Captura Pagadas</h2>
         <div className="d-flex flex gap-3 py-4 items-end">
           <div className="d-flex flex gap-3">
             <DatePicker label="Fecha de Inicio:*" />

@@ -50,7 +50,7 @@ export function Modal() {
       },
       {
         accessorKey: "descripcionTramite",
-        header: "Descripción Del Trámite",
+        header: "Descripción del Trámite",
         cell: ({ getValue }) => <>{getValue()}</>,
       },
       {

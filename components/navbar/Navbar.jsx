@@ -16,7 +16,7 @@ import { House } from "lucide-react";
 import Image from "next/image";
 const components = [
   {
-    title: "Estadisticos",
+    title: "Estadísticos",
     href: "/estadisticos",
     description: "Pantalla para el estado de líneas de captura.",
   },
@@ -82,24 +82,14 @@ const components3 = [
     description: "Pantalla para el periodo de acceso al sistema (modal).",
   },
   {
-    title: "Catalogo de Trámites",
+    title: "Catálogo de Trámites",
     href: "/catalogo/tramites",
     description: "Pantalla para el catálogo de trámites.",
   },
   {
-    title: "Catalogo de Trámites Actualización",
+    title: "Catálogo de Trámites Actualización",
     href: "/catalogo/tramites/1",
     description: "Pantalla para el catálogo de trámites (Actualización).",
-  },
-  {
-    title: "Catalogo de Errores ",
-    href: "/catalogo/errores",
-    description: "Pantalla para el catálogo de errores.",
-  },
-  {
-    title: "Catalogo de Errores Actualización",
-    href: "/catalogo/errores/1",
-    description: "Pantalla para el catálogo de errores (Actualización).",
   },
 ];
 

@@ -126,7 +126,7 @@ export default function CatalogoTramite() {
       <Dialog open={true}>
         <DialogContent className="max-w-screen-lg h-full overflow-y-scroll">
           <DialogHeader>
-            <DialogTitle>Lineas de Captura Pagadas por Dependencia</DialogTitle>
+            <DialogTitle>Líneas de Captura Pagadas por Dependencia</DialogTitle>
           </DialogHeader>
           <Modal />
         </DialogContent>

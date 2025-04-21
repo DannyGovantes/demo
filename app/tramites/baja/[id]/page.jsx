@@ -98,13 +98,13 @@ export default function TramitesBajaPage() {
     <>
       <section className="py-4">
         <h1 className="font-bold">
-          Estadístico y Detalle tramites dados de baja
+          Estadístico y Detalle Trámites dados de baja
         </h1>
         <h2>Periodo de Baja de Trámites</h2>
         <div className="d-flex flex justify-between gap-3 py-4">
           <div className="d-flex flex gap-3">
-            <DatePicker />
-            <DatePicker />
+            <DatePicker label="Fecha de Inicio:*" />
+            <DatePicker label="Fecha de Fin:*" />
           </div>
 
           <Button> Generar estadisticos</Button>
